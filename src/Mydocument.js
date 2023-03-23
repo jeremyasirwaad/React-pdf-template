@@ -278,7 +278,9 @@ const styles = StyleSheet.create({
 export const MyDocument = () => (
 	<Document>
 		<Page size="A4" style={styles.page} wrap>
-			// College Info
+			{" "}
+			//Wrap to automatically wrap the data in the page to next page // College
+			Info
 			<View style={styles.headermain} fixed>
 				<View style={styles.header1}>
 					<Text style={styles.textmargin}>
@@ -308,6 +310,8 @@ export const MyDocument = () => (
 			//first heading
 			<View style={styles.table}>
 				<View style={styles.tableheader} fixed>
+					{" "}
+					//Fixed attribute is to make the view repeate for all pages
 					<View style={styles.tableheader1}>
 						<Text>Branch: AD</Text>
 						<Text style={{ marginRight: "30px" }}>
@@ -454,6 +458,7 @@ export const MyDocument = () => (
 				})}
 			</View>
 		</Page>
+		//last Page
 		<Page>
 			<View style={styles.headermain} fixed>
 				<View style={styles.header1}>
