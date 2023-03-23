@@ -233,6 +233,44 @@ const styles = StyleSheet.create({
 		justifyContent: "space-evenly",
 		width: "30%",
 		height: "100%"
+	},
+
+	centerentrydata: {
+		width: "100vw",
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "center"
+	},
+
+	entrydata: {
+		// margin: "40px",
+		// padding: "30px",
+		height: "120px",
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "space-evenly",
+		width: "90%",
+		fontFamily: "Times-Roman",
+		fontSize: "12px",
+		border: "1px solid black",
+		marginTop: "100px"
+	},
+
+	entrydatacolumns: {
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "space-evenly",
+		height: "100%"
+	},
+	entrydatalastline: {
+		width: "70%",
+		display: "flex",
+		alignItems: "center",
+		justifyContent: "space-between",
+		marginTop: "140px",
+		fontFamily: "Times-Roman",
+		fontSize: "12px",
+		flexDirection: "row"
 	}
 });
 
@@ -414,6 +452,84 @@ export const MyDocument = () => (
 						</View>
 					);
 				})}
+			</View>
+		</Page>
+		<Page>
+			<View style={styles.headermain} fixed>
+				<View style={styles.header1}>
+					<Text style={styles.textmargin}>
+						DIRECTORATE OF TECHNICAL EDUCATION :: CHENNAI 600 025
+					</Text>
+					<Text style={styles.textmargin}>
+						ADMISSION TO FIRST YEAR B.E / B.TECH / B.ARCH DEGREE COURSES
+						2021-2022
+					</Text>
+				</View>
+				<View style={styles.header2}>
+					<Text style={styles.textmargin}>
+						ANNEXURE TO LETTER NO: 4703/ECA2/2022
+					</Text>
+					<Text style={styles.textmargin}>DATED &nbsp; /02/2022</Text>
+				</View>
+				<View style={styles.header3}>
+					<Text style={styles.textmargin}>LIST OF CANDIDATES APPROVED</Text>
+					<Text style={styles.textmargin}>
+						2702-BANNARI AMMAN INSTITUTE OF TECHNOLOGY (AUTONOMOUS),
+					</Text>
+					<Text style={styles.textmargin}>
+						SATHYAMANAGALAM, ERODE DISTRICT 638401
+					</Text>
+				</View>
+			</View>
+			<View style={styles.centerentrydata}>
+				<View style={styles.entrydata}>
+					<View style={styles.entrydatacolumns}>
+						<View>
+							<Text>TOTAL NUMBER OF STUDENTS ADMITTED</Text>
+						</View>
+						<View>
+							<Text>TOTAL NUMBER OF STUDENTS APPROVED</Text>
+						</View>
+						<View>
+							<Text>TOTAL NUMBER OF STUDENTS PENDING / NOT APPROVED</Text>
+						</View>
+					</View>
+					<View style={styles.entrydatacolumns}>
+						<View>
+							<Text>:</Text>
+						</View>
+						<View>
+							<Text>:</Text>
+						</View>
+						<View>
+							<Text>:</Text>
+						</View>
+					</View>
+					<View style={styles.entrydatacolumns}>
+						<View>
+							<Text>1610</Text>
+						</View>
+						<View>
+							<Text>1610</Text>
+						</View>
+						<View>
+							<Text>0</Text>
+						</View>
+					</View>
+				</View>
+			</View>
+			<View style={styles.centerentrydata}>
+				<View style={styles.entrydatalastline}>
+					<View>
+						<Text>L.O.</Text>{" "}
+					</View>
+					<View>
+						<Text>/</Text>{" "}
+					</View>
+					<View>
+						<Text>CTE</Text>{" "}
+					</View>
+				</View>
 			</View>
 		</Page>
 	</Document>
